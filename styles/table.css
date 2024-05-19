@@ -1,0 +1,48 @@
+.content table{
+    margin: 20px 0 30px;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.content table thead{
+    background: rgba(128, 128, 128, 0.239);
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+
+.content table tbody tr{
+    gap: 10px;
+    margin-top: 10px;
+    padding-top: 20px;
+    row-gap: 10px;
+}
+
+.content table th, .content table td{
+    padding: 12px 8px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.content table thead th:nth-child(1), .content table tbody td:nth-child(1){
+    border-radius: 7px 0 0 7px;
+}
+
+.content table thead th:last-child, .content table tbody td:last-child{
+    border-radius: 0 7px 7px 0;
+}
+
+.content table tbody tr{
+    margin: 15px 0;
+    background: white;
+    padding: 12px 10px;
+}
+
+.content table tbody tr td{
+    padding: 12px 15px;
+    margin: 5px 0;
+}

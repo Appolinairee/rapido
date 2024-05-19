@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    background: white;
+}
+
+*{
+    text-decoration: none;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+input, select, option{
+    font-family: "Montserrat", sans-serif;
+}
+
+.content{
+    background: rgba(128, 128, 128, 0.09);
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.086), -1px -4px 3px rgba(0, 0, 0, 0.086);
+    padding: 20px 2%;
+    border-radius: 10px;
+}
+
+.content .nav{
+    background: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.content .nav .links{
+    gap: 15px;
+}
+
+.after{
+    position: relative;
+}
+
+.after::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.content .nav .link.active::after{
+    background: cadetblue;
+    height: 3px;
+    bottom: -4px;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 4px;
+}
+
+.tableIcon{
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.233);
+    padding: 7px;
+    font-size: 13px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.tableIcon:hover{
+    opacity: 1;
+}
+
+.tableIcon.fa-trash-can{
+    color: rgba(255, 0, 0, 0.822);
+    font-size: 12px;
+}
+
+.button{
+    background: cadetblue;
+    width: fit;
+    color: white;
+    border-radius: 20px;
+    padding: 0 10px;
+    max-width: 190px;
+    justify-content: center;
+    margin: 40px 0 10px;
+    cursor: pointer;
+    transition: .1s ease;
+    font-weight: 500;
+    font-size: 15px;
+    height: 45px;
+}
+
+.button p, .button i{
+    color: white;
+}
+
+.button:hover{
+    background: white;
+}
+
+.button:hover p, .button:hover i{
+    color: black;
+}
+
+.modal .overflow{
+    background: rgba(0, 0, 0, 0.539);
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.update .modal .overflow{
+    display: block;
+}
+
+input:focus, select:focus{
+    outline: none;
+}
+
+.input{
+    width: 100%;
+}
+
+
+.input input, .input select, input select option{
+    padding: 13px 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.249);
+    margin-top: 4px;
+}
+
+.submitButton{
+   border: none;
+   width: 100px;
+   margin: 0;
+}
+
+.submitButton:hover{
+    background: cadetblue;
+}
+
+.input.chauffeur select{
+    width: 100%;
+}
+
+.inputFlex{
+    align-items: start;
+}
+
+.notification{
+    box-shadow: 1px 3px 3px rgba(94, 221, 10, 0.234), -1px -3px 3px rgba(94, 221, 10, 0.234);
+    position: fixed;
+    right: 10px;
+    bottom: 5%;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.notification .error{
+    box-shadow: 1px 3px 3px red, -1px -3px 3px red;
+}
